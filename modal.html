@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+
+  </head>
+  <body>
+    <div id="app">
+      <modal v-if="showModal" @close="showModal = false">
+        <template slot='title'> Model Title from View </template>
+        <template slot='content'> Content from View </template>
+        <template slot='button'> Show Modal </template>
+      </modal>  
+
+      <button @click="showModal=true">Show modal</button>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+
+</html>
