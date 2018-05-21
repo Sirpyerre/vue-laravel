@@ -8,18 +8,15 @@
 
   </head>
   <body>
-    <div id="root">
-      <modal v-if="showModal" @close="showModal = false">
-        <template slot='title'> Model Title from View </template>
-        <template slot='content'> Content from View </template>
-        <template slot='button'> Show Modal </template>
-      </modal>  
+    <div id="root" class="container">
+      
+      <message title="Hello word" body="Lorem ipsum dolar sit emet"></message>
+      <message title="Hello universe" body="Si puedes imaginarlo puedes programarlo"></message>
 
-      <button @click="showModal=true">Show modal</button>
     </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-  <script src="js/modal.js"></script>
+  <script src="js/component.js"></script>
   </body>
 
 </html>
